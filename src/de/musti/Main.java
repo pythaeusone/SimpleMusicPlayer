@@ -2,14 +2,17 @@ package de.musti;
 
 import java.util.Scanner;
 
+// Credits: ButtonMasher by Amber Waldron , 8BitMinimalTechnoLoop1 & 8BitElectronicLoop1 by jabameister.
+
 public class Main {
 	
 	static SimpleMusicPlayer mp;
 	static MThreads newThread;
 	static boolean loops; // Scanner Loop
 	static Scanner scan;
-	static String[] music_list = {"ButtonMasher.wav","8BitElectronicLoop1.wav","8BitMinimalTechnoLoop1.wav"};
-	static String filepath = "audio/" + music_list[0]; // Add Path with Songname.
+	static String[] music_list = {"ButtonMasher","8BitElectronicLoop1","8BitMinimalTechnoLoop1"};
+	static String fileType = ".wav"; // only WAV format -.-
+	static String filepath = "audio/" + music_list[0] + fileType; // Add Path with Songname.
 	static int countSong; // counter for Current Song.
 
 	public static void main(String[] args)
